@@ -1,12 +1,11 @@
 using System.Reflection;
-using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
-[assembly: AssemblyTitle("HelloTestUnitTest")]
+[assembly: AssemblyTitle("SmallThingsTest")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("ObiWanLansi")]
-[assembly: AssemblyProduct("HelloTestUnitTest")]
+[assembly: AssemblyProduct("SmallThingsTest")]
 [assembly: AssemblyCopyright("Copyright © ObiWanLansi 2021")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

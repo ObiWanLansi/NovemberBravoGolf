@@ -7,8 +7,8 @@
     <ProjectGuid>{3CA811FF-48F6-43A2-A97A-FFD4086F4276}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>HelloTestUnitTest</RootNamespace>
-    <AssemblyName>HelloTestUnitTest</AssemblyName>
+    <RootNamespace>SmallThingsTest</RootNamespace>
+    <AssemblyName>SmallThingsTest</AssemblyName>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -53,6 +53,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SmallThingsConsole\SmallThingsConsole.csproj">
+      <Project>{26381af5-8f31-44e5-99f9-a8eb4d3ba9a9}</Project>
+      <Name>SmallThingsConsole</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

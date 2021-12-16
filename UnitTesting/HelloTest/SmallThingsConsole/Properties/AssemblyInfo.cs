@@ -1,15 +1,14 @@
 ﻿using System.Reflection;
-using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
 // Allgemeine Informationen über eine Assembly werden über die folgenden
 // Attribute gesteuert. Ändern Sie diese Attributwerte, um die Informationen zu ändern,
 // die einer Assembly zugeordnet sind.
-[assembly: AssemblyTitle("HelloTest")]
+[assembly: AssemblyTitle("SmallThingsConsole")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("ObiWanLansi")]
-[assembly: AssemblyProduct("HelloTest")]
+[assembly: AssemblyProduct("SmallThingsConsole")]
 [assembly: AssemblyCopyright("Copyright © ObiWanLansi 2021")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

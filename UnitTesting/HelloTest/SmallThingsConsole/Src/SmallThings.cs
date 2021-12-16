@@ -1,10 +1,10 @@
 ﻿using System;
 
-using HelloTest.Shapes;
+using SmallThings.Shapes;
 
 
 
-namespace HelloTest
+namespace SmallThings
 {
     class Program
     {
