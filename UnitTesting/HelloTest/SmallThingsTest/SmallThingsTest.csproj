@@ -50,6 +50,7 @@
   <ItemGroup>
     <Compile Include="Src\TestCircle.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Src\TestRectangle.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

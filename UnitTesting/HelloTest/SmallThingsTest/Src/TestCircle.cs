@@ -1,7 +1,10 @@
-﻿
+﻿using System;
+
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 using SmallThings.Shapes;
+
+
 
 namespace SmallThingsTest
 {
@@ -9,7 +12,6 @@ namespace SmallThingsTest
     public class TestCircle
     {
         private const uint TEST_RADIUS = 42;
-
 
 
         [TestMethod]
@@ -26,20 +28,25 @@ namespace SmallThingsTest
         {
             Circle c = new Circle(TEST_RADIUS);
 
-            Assert.AreEqual(TEST_RADIUS * (uint)2, c.GetDurchmesser());
+            Assert.AreEqual(TEST_RADIUS * (uint) 2, c.GetDurchmesser());
         }
 
 
         [TestMethod]
         public void TestUmfang()
         {
-            //Assert.AreEqual
+            Circle c = new Circle(TEST_RADIUS);
+
+            Assert.AreEqual(TEST_RADIUS * 2 * Math.PI, c.GetUmfang());
         }
 
 
         [TestMethod]
         public void TestFlaeche()
         {
+            Circle c = new Circle(TEST_RADIUS);
+
+            Assert.AreEqual(Math.Pow(TEST_RADIUS, 2) * Math.PI, c.GetFlaeche());
         }
     }
 }

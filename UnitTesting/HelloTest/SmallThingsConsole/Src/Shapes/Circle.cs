@@ -1,4 +1,5 @@
-﻿
+﻿using System;
+
 
 
 namespace SmallThings.Shapes
@@ -15,6 +16,7 @@ namespace SmallThings.Shapes
         private readonly uint radius_cm;
 
         //-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 
         /// <summary>
         /// Initializes a new instance of the <see cref="Circle"/> class.
@@ -57,7 +59,17 @@ namespace SmallThings.Shapes
         public double GetUmfang()
         {
             // Definitiv ein Bug ;-)
-            return 0;
+            return this.radius_cm * -1;
+        }
+
+
+        /// <summary>
+        /// Gets the flaeche in cm².
+        /// </summary>
+        /// <returns></returns>
+        public double GetFlaeche()
+        {
+            return Math.Pow(this.radius_cm, 2) * Math.PI;
         }
 
         #endregion
