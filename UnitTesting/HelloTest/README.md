@@ -2,6 +2,12 @@
 
 Ein kleines Beispielprojekt mit einem Kreis und einem Rechteck sowie dazugehörige UnitTest's.
 
+Wofür UnitTesting?
+
+- Sicherstellung der Korrektheit des Code's
+- Testen der Software auf Schwachstellen
+- Nachweis der Erfüllung von Anforderungen des Kunden
+  
 ---
 
 ## Struktur / Gliederung
@@ -18,13 +24,13 @@ nur durch den jeweiligen Konstruktor gesetzt werden.
 
 ### Small Things Test (Testprojekt)
 
-Hierbei handelt es sich um das eigentlich Testprojekt. Jede Klasse und jeder Funktion
-der Klassen kann getestet werden, ohne die Hauptanwendung starten zu müssen. Dadurch
-können auch immer Kombinationen getestet werden, die durch einen normalen Betrieb schwer
+Hierbei handelt es sich um das eigentlich Testprojekt. Jede Klasse und jede Funktion
+der Klassen kann getestet werden ohne die Hauptanwendung starten zu müssen. Dadurch
+können auch Kombinationen getestet werden, die durch einen normalen Betrieb schwer
 erreichbar sind, aber dennoch vorkommen können (Testen der Min/Max Werte für Felder,
 negative Werte, allgemein ungültige Werte).
 
-Abhängigkeiten müssen bei dem TestProjekt hinzugefügt sein:
+Folgende Abhängigkeiten müssen bei dem TestProjekt hinzugefügt sein:
 
 - `MSTest.TestAdapter`
 - `MSTest.TestFramework`
@@ -33,12 +39,11 @@ Abhängigkeiten müssen bei dem TestProjekt hinzugefügt sein:
 
 ## Sonstiges
 
-Test Projekte / Source werden nicht mit ausgeliefert:
+Test Projekte / Source werden nicht mit ausgeliefert weil:
 
-- Interna von Klassen könnten ungewollt nach außen gelangen.
-- TestCode könnte auch wieder Bugs enthalten die zu einem Problem führen.
-- Die Abhängigkeiten (DLL's der TestFrameworks) müssten acuh mit ausgeliefert werden.
-  > Lizensen, Bug's, Dokumentation ?
+- Interna von Klassen könnten ungewollt nach außen gelangen
+- TestCode könnte auch wieder Bugs enthalten die zu einem Problem führen
+- Die Abhängigkeiten (DLL's der TestFrameworks) müssten auch mit ausgeliefert werden (Lizensenproblematik, weitere Bug's, fehlende Dokumentation )
 
 ---
 
